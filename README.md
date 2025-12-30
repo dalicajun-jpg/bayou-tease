@@ -1,2 +1,2 @@
-# bayou-tease
-The Bayou Tease affiliate content site
+# The Bayou Tease
+Affiliate content site.
