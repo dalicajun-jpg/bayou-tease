@@ -1,6 +1,27 @@
-<form
-  name="whats-hotter"
-  method="POST"
-  action="/thanks.html"
-  data-netlify="true"
->
+<section style="margin: 40px auto; max-width: 600px; text-align: center;">
+  <h2>🔥 What’s Hotter Right Now?</h2>
+  <p>Vote and help decide the next tease.</p>
+
+  <form id="whatsHotterForm">
+    <label style="display:block; margin: 10px;">
+      <input type="radio" name="vote" value="Blindfold + Tease" required>
+      Blindfold + Tease
+    </label>
+
+    <label style="display:block; margin: 10px;">
+      <input type="radio" name="vote" value="Warm Oil Massage">
+      Warm Oil Massage
+    </label>
+
+    <button type="submit" style="margin-top:15px;">
+      Vote 🔥
+    </button>
+  </form>
+</section>
+
+<script>
+document.getElementById("whatsHotterForm").addEventListener("submit", function(e) {
+  e.preventDefault(); // STOP form submission
+  window.location.href = "/thanks.html"; // REDIRECT
+});
+</script>
